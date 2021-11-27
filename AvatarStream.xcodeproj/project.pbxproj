@@ -10,6 +10,7 @@
 		4215B3472751E726002A6376 /* AvatarIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3462751E726002A6376 /* AvatarIO.swift */; };
 		4215B3522751ED57002A6376 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3512751ED57002A6376 /* PropertyListView.swift */; };
 		4215B3542751F4B0002A6376 /* MemojiThumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */; };
+		4215B35C275215BB002A6376 /* MultipeerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4215B35B275215BB002A6376 /* MultipeerKit */; };
 		4220EDA7274F8BF300C3595E /* AvatarStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */; };
 		4220EDAB274F8BF400C3595E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAA274F8BF400C3595E /* Assets.xcassets */; };
 		4220EDAE274F8BF400C3595E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAD274F8BF400C3595E /* Preview Assets.xcassets */; };
@@ -32,6 +33,9 @@
 		4215B3502751E7C1002A6376 /* AVTMemoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTMemoji.h; sourceTree = "<group>"; };
 		4215B3512751ED57002A6376 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
 		4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemojiThumbnailer.swift; sourceTree = "<group>"; };
+		4215B35527520D55002A6376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4215B35D27521774002A6376 /* AvatarStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvatarStream.entitlements; sourceTree = "<group>"; };
+		4215B35E27521775002A6376 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		4220EDA3274F8BF300C3595E /* AvatarStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStreamApp.swift; sourceTree = "<group>"; };
 		4220EDAA274F8BF400C3595E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			files = (
 				424D7922274F911400FB064A /* AvatarKit.framework in Frameworks */,
 				424D7927274F926200FB064A /* AvatarPersistence.framework in Frameworks */,
+				4215B35C275215BB002A6376 /* MultipeerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 		4220EDA5274F8BF300C3595E /* AvatarStream */ = {
 			isa = PBXGroup;
 			children = (
+				4215B35D27521774002A6376 /* AvatarStream.entitlements */,
+				4215B35527520D55002A6376 /* Info.plist */,
 				424D790A274F901400FB064A /* Headers */,
 				4215B3462751E726002A6376 /* AvatarIO.swift */,
 				4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */,
@@ -105,6 +112,7 @@
 		4220EDB6274F8D6A00C3595E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4215B35E27521775002A6376 /* NetworkExtension.framework */,
 				424D7920274F911400FB064A /* AvatarKit.framework */,
 				424D7921274F911400FB064A /* AvatarPersistence.framework */,
 			);
@@ -147,6 +155,9 @@
 			dependencies = (
 			);
 			name = AvatarStream;
+			packageProductDependencies = (
+				4215B35B275215BB002A6376 /* MultipeerKit */,
+			);
 			productName = AvatarStream;
 			productReference = 4220EDA3274F8BF300C3595E /* AvatarStream.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 4220ED9A274F8BF300C3595E;
+			packageReferences = (
+				4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */,
+			);
 			productRefGroup = 4220EDA4274F8BF300C3595E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AvatarStream/AvatarStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AvatarStream/Preview Content\"";
@@ -351,7 +366,9 @@
 					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AvatarStream/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used solely to permit face tracking.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be sent between devices on your local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -378,6 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AvatarStream/AvatarStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AvatarStream/Preview Content\"";
@@ -388,7 +406,9 @@
 					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AvatarStream/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used solely to permit face tracking.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be sent between devices on your local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/insidegui/MultipeerKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4215B35B275215BB002A6376 /* MultipeerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */;
+			productName = MultipeerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4220ED9B274F8BF300C3595E /* Project object */;
 }

@@ -5,6 +5,7 @@
 //  Created by Spotlight Deveaux on 2021-11-26.
 //
 
+import MultipeerKit
 import SwiftUI
 
 class AvatarObservable: ObservableObject {
@@ -15,31 +16,31 @@ struct ContentView: View {
     let thumbnailer = MemojiThumbnailer()
     @State var showingPlist = false
     @StateObject var memojis = AvatarObservable()
+    @ObservedObject var datasource: MultipeerDataSource = {
+        var config = MultipeerConfiguration.default
+        config.serviceType = "avatar"
+        config.security.encryptionPreference = .required
+        
+        let transceiver = MultipeerTransceiver(configuration: config)
+        return MultipeerDataSource(transceiver: transceiver)
+    }()
+
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(AVTAnimoji.animojiNames(), id: \.self) { name in
-                    NavigationLink(destination: AvatarView(animoji: name)) {
-                        Image(uiImage: AVTAnimoji.thumbnail(forAnimojiNamed: name, options: nil))
-                            .resizable()
-                            .frame(width: 75.0, height: 75.0)
-                            .scaledToFit()
-                            .padding()
-                        Text(name.capitalized)
-                            .font(.title3)
-                    }
-                }
-
+                // Registered Memoji
                 ForEach(memojis.avatars, id: \.self) { memoji in
                     NavigationLink(destination: AvatarView(record: memoji.record)) {
-                        Image(uiImage: thumbnailer.thumbnailPuppet(record: memoji.record))
-                            .resizable()
-                            .frame(width: 75.0, height: 75.0)
-                            .scaledToFit()
-                            .padding()
-                        Text(memoji.name.capitalized)
-                            .font(.title3)
+                        LinkView(image: thumbnailer.thumbnailPuppet(record: memoji.record), name: memoji.name)
+                    }
+                }
+                
+                
+                // Normal Animoji
+                ForEach(AVTAnimoji.animojiNames(), id: \.self) { name in
+                    NavigationLink(destination: AvatarView(animoji: name)) {
+                        LinkView(image: AVTAnimoji.thumbnail(forAnimojiNamed: name, options: nil), name: name)
                     }
                 }
             }.navigationTitle("Animoji")
@@ -59,7 +60,27 @@ struct ContentView: View {
         }.sheet(isPresented: $showingPlist) {
             PropertyListView()
                 .environmentObject(memojis)
+        }.onAppear {
+            datasource.transceiver.resume()
+            datasource.transceiver.receive(AvatarRecords.self) { payload, _ in
+                memojis.avatars = payload.avatars
+            }
         }
+    }
+}
+
+struct LinkView: View {
+    let image: UIImage
+    let name: String
+    
+    var body: some View {
+        Image(uiImage: image)
+            .resizable()
+            .frame(width: 75.0, height: 75.0)
+            .scaledToFit()
+            .padding()
+        Text(name.capitalized)
+            .font(.title3)
     }
 }
 

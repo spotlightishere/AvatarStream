@@ -32,6 +32,11 @@ struct AvatarRecord: Codable, Hashable {
         let recordValue = try container.decode(Data.self, forKey: .record)
         record = try NSKeyedUnarchiver.unarchivedObject(ofClass: AVTAvatarRecord.self, from: recordValue)!
     }
+    
+    init(name: String, record: AVTAvatarRecord) {
+        self.name = name
+        self.record = record
+    }
 }
 
 class AvatarRecords: Codable {
@@ -55,4 +60,8 @@ func importer(givenPlist: String) -> [AvatarRecord] {
     }
 
     return returnVal
+}
+
+func importer(records: AvatarRecords) -> [AvatarRecord] {
+    return records.avatars
 }
