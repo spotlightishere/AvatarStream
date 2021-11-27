@@ -9,7 +9,6 @@
 #define AVTAnimoji_h
 
 @import Foundation;
-@import UIKit;
 #import "AVTAvatar.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,8 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @returns A list of Animoji registered with the system.
  */
 + (NSArray<NSString *> *)animojiNames;
-+ (UIImage *)thumbnailForAnimojiNamed:(NSString *)name
-                              options:(NSArray *_Nullable)options;
++ (CommonImage *)thumbnailForAnimojiNamed:(NSString *)name
+                                  options:(NSArray *_Nullable)options;
 @end
 
 NS_ASSUME_NONNULL_END

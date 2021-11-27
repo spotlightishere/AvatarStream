@@ -1,6 +1,6 @@
 //
-//  AvatarView.swift
-//  AvatarStream
+//  PlatformAvatarView.swift
+//  AvatarStream (iOS)
 //
 //  Created by Spotlight Deveaux on 2021-11-26.
 //
@@ -8,16 +8,8 @@
 import SceneKit
 import SwiftUI
 
-struct AvatarView: UIViewRepresentable {
+struct PlatformAvatarView: UIViewRepresentable {
     let avatar: AVTAvatar
-
-    init(animoji: String) {
-        avatar = AVTAnimoji(named: animoji)
-    }
-
-    init(record: AVTAvatarRecord) {
-        avatar = AVTAvatarRecordRendering.avatar(for: record, usageIntent: 1)
-    }
 
     func makeUIView(context _: Context) -> UIView {
         let avatarView = AVTView()
@@ -31,8 +23,8 @@ struct AvatarView: UIViewRepresentable {
     func updateUIView(_: UIView, context _: Context) {}
 }
 
-struct AvatarView_Previews: PreviewProvider {
+struct PlatformAvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarView(animoji: "fox")
+        PlatformAvatarView(avatar: AVTAnimoji(named: "fox"))
     }
 }

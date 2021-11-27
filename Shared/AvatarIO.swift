@@ -32,7 +32,7 @@ struct AvatarRecord: Codable, Hashable {
         let recordValue = try container.decode(Data.self, forKey: .record)
         record = try NSKeyedUnarchiver.unarchivedObject(ofClass: AVTAvatarRecord.self, from: recordValue)!
     }
-    
+
     init(name: String, record: AVTAvatarRecord) {
         self.name = name
         self.record = record
@@ -43,8 +43,6 @@ class AvatarRecords: Codable {
     var avatars: [AvatarRecord] = []
 }
 
-// It would be nice to permit export at some point in time.
-// TODO: export
 func importer(givenPlist: String) -> [AvatarRecord] {
     var returnVal: [AvatarRecord] = []
 
@@ -63,5 +61,26 @@ func importer(givenPlist: String) -> [AvatarRecord] {
 }
 
 func importer(records: AvatarRecords) -> [AvatarRecord] {
-    return records.avatars
+    records.avatars
+}
+
+func exporter() {
+    do {
+        let endData = MemojiThumbnailer.shared.getMemoji()
+
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+        let plist = try encoder.encode(endData)
+        let dataString = String(data: plist, encoding: .utf8)!
+
+        #if os(macOS)
+            let pasteboard = NSPasteboard.general
+            pasteboard.clearContents()
+            pasteboard.setString(dataString, forType: .string)
+        #else
+            UIPasteboard.general.string = dataString
+        #endif
+    } catch let e {
+        print(e)
+    }
 }

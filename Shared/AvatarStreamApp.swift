@@ -1,8 +1,8 @@
 //
 //  AvatarStreamApp.swift
-//  AvatarStream
+//  Shared
 //
-//  Created by Spotlight Deveaux on 2021-11-25.
+//  Created by Spotlight Deveaux on 2021-11-26.
 //
 
 import SwiftUI

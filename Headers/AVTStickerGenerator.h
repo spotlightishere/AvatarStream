@@ -9,7 +9,6 @@
 #define AVTStickerGenerator_h
 
 @import SceneKit;
-@import UIKit;
 #import "AVTAvatar.h"
 #import "AVTStickerConfiguration.h"
 #import "AVTStickerGeneratorOptions.h"
@@ -17,8 +16,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // renderer is technically a SCNRenderer,
-// but for all intents and purposes it's a UIImage to us
-typedef void (^SuccessBlock)(UIImage *rendered, AVTAvatar *avatar);
+// but for all intents and purposes it's a direct image to us
+typedef void (^SuccessBlock)(CommonImage *rendered, AVTAvatar *avatar);
 
 @interface AVTStickerGenerator : NSObject
 - (AVTStickerGenerator *)initWithAvatar:(AVTAvatar *)record;

@@ -15,10 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AVTView : SCNView
 @property AVTAvatar *avatar;
-/// Sets the avatar expected to be used in this view.
-/// @param avatar The avatar to display within this view.
 - (void)setAvatar:(AVTAvatar *)avatar;
-
 - (void)setEnableFaceTracking:(BOOL)enable;
 @end
 

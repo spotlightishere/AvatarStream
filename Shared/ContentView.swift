@@ -20,23 +20,21 @@ struct ContentView: View {
         var config = MultipeerConfiguration.default
         config.serviceType = "avatar"
         config.security.encryptionPreference = .required
-        
+
         let transceiver = MultipeerTransceiver(configuration: config)
         return MultipeerDataSource(transceiver: transceiver)
     }()
-
 
     var body: some View {
         NavigationView {
             List {
                 // Registered Memoji
-                ForEach(memojis.avatars, id: \.self) { memoji in
-                    NavigationLink(destination: AvatarView(record: memoji.record)) {
-                        LinkView(image: thumbnailer.thumbnailPuppet(record: memoji.record), name: memoji.name)
+                ForEach(thumbnailer.getMemoji().avatars, id: \.self) { memoji in
+                    NavigationLink(destination: AvatarView(avatar: memoji.avatar())) {
+                        LinkView(image: memoji.thumbnail(), name: memoji.name)
                     }
                 }
-                
-                
+
                 // Normal Animoji
                 ForEach(AVTAnimoji.animojiNames(), id: \.self) { name in
                     NavigationLink(destination: AvatarView(animoji: name)) {
@@ -52,6 +50,17 @@ struct ContentView: View {
                             }) {
                                 Label("Import from Property List", systemImage: "square.and.arrow.down")
                             }
+                            Button(action: {
+                                exporter()
+                            }) {
+                                Label("Share Memoji to Clipboard", systemImage: "square.and.arrow.up")
+                            }
+                            Button(action: {
+                                let all = thumbnailer.getMemoji()
+                                datasource.transceiver.send(all, to: datasource.transceiver.availablePeers)
+                            }) {
+                                Label("Share Memoji to Local Devices", systemImage: "square.and.arrow.up")
+                            }.disabled(datasource.availablePeers.isEmpty)
                         } label: {
                             Label("Share", systemImage: "square.and.arrow.up")
                         }
@@ -70,11 +79,11 @@ struct ContentView: View {
 }
 
 struct LinkView: View {
-    let image: UIImage
+    let image: CommonImage
     let name: String
-    
+
     var body: some View {
-        Image(uiImage: image)
+        Image(image: image)
             .resizable()
             .frame(width: 75.0, height: 75.0)
             .scaledToFit()

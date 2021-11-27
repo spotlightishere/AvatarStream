@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AVTAvatarRecord : NSObject<NSCoding>
--(AVTAvatarRecord*)initWithAvatarData:(NSData*)data;
+@interface AVTAvatarRecord : NSObject <NSCoding>
+- (BOOL)isPuppet;
 @end
 
 NS_ASSUME_NONNULL_END

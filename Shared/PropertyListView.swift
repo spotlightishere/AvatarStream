@@ -20,6 +20,7 @@ struct PropertyListView: View {
                     text: $text
                 )
             }
+            #if !os(macOS)
             .navigationBarTitle("Property List", displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 memojis.avatars = importer(givenPlist: text)
@@ -27,6 +28,9 @@ struct PropertyListView: View {
             }) {
                 Text("Done").bold()
             })
+            #else
+                // TODO: DETERMINE BETTER BUTTON
+            #endif
         }
     }
 }

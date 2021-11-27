@@ -7,178 +7,241 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4215B3472751E726002A6376 /* AvatarIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3462751E726002A6376 /* AvatarIO.swift */; };
-		4215B3522751ED57002A6376 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3512751ED57002A6376 /* PropertyListView.swift */; };
-		4215B3542751F4B0002A6376 /* MemojiThumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */; };
-		4215B35C275215BB002A6376 /* MultipeerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4215B35B275215BB002A6376 /* MultipeerKit */; };
-		4220EDA7274F8BF300C3595E /* AvatarStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */; };
-		4220EDAB274F8BF400C3595E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAA274F8BF400C3595E /* Assets.xcassets */; };
-		4220EDAE274F8BF400C3595E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAD274F8BF400C3595E /* Preview Assets.xcassets */; };
-		424D7922274F911400FB064A /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424D7920274F911400FB064A /* AvatarKit.framework */; };
-		424D7927274F926200FB064A /* AvatarPersistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424D7921274F911400FB064A /* AvatarPersistence.framework */; };
-		42CFC2072751923400EB7AFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFC2052751923400EB7AFB /* ContentView.swift */; };
-		42CFC2082751923400EB7AFB /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFC2062751923400EB7AFB /* AvatarView.swift */; };
+		4215B37A27521B88002A6376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4215B36827521B88002A6376 /* Assets.xcassets */; };
+		4215B37B27521B88002A6376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4215B36827521B88002A6376 /* Assets.xcassets */; };
+		4215B3B927521FFB002A6376 /* MultipeerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4215B3B827521FFB002A6376 /* MultipeerKit */; };
+		4215B3BC27522008002A6376 /* MultipeerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4215B3BB27522008002A6376 /* MultipeerKit */; };
+		4215B3C127522159002A6376 /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4215B3BF27522159002A6376 /* AvatarKit.framework */; };
+		4215B3C22752215A002A6376 /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4215B3BF27522159002A6376 /* AvatarKit.framework */; };
+		4215B3C32752215A002A6376 /* AvatarPersistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4215B3C027522159002A6376 /* AvatarPersistence.framework */; };
+		4215B3C42752215A002A6376 /* AvatarPersistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4215B3C027522159002A6376 /* AvatarPersistence.framework */; };
+		4215B3C62752241F002A6376 /* Glue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3C52752241F002A6376 /* Glue.swift */; };
+		4215B3C92752246F002A6376 /* Glue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3C82752246F002A6376 /* Glue.swift */; };
+		4215B3CB275224A8002A6376 /* PlatformAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3CA275224A8002A6376 /* PlatformAvatarView.swift */; };
+		4215B3D02752251F002A6376 /* PlatformAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3CF2752251F002A6376 /* PlatformAvatarView.swift */; };
+		42381EF427523B77001A3D35 /* AvatarStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EEE27523B77001A3D35 /* AvatarStreamApp.swift */; };
+		42381EF527523B77001A3D35 /* AvatarStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EEE27523B77001A3D35 /* AvatarStreamApp.swift */; };
+		42381EF627523B77001A3D35 /* MemojiThumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EEF27523B77001A3D35 /* MemojiThumbnailer.swift */; };
+		42381EF727523B77001A3D35 /* MemojiThumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EEF27523B77001A3D35 /* MemojiThumbnailer.swift */; };
+		42381EF827523B77001A3D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF027523B77001A3D35 /* ContentView.swift */; };
+		42381EF927523B77001A3D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF027523B77001A3D35 /* ContentView.swift */; };
+		42381EFA27523B77001A3D35 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF127523B77001A3D35 /* PropertyListView.swift */; };
+		42381EFB27523B77001A3D35 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF127523B77001A3D35 /* PropertyListView.swift */; };
+		42381EFC27523B77001A3D35 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF227523B77001A3D35 /* AvatarView.swift */; };
+		42381EFD27523B77001A3D35 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF227523B77001A3D35 /* AvatarView.swift */; };
+		42381EFE27523B77001A3D35 /* AvatarIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF327523B77001A3D35 /* AvatarIO.swift */; };
+		42381EFF27523B77001A3D35 /* AvatarIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42381EF327523B77001A3D35 /* AvatarIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4215B3462751E726002A6376 /* AvatarIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarIO.swift; sourceTree = "<group>"; };
-		4215B3482751E7C1002A6376 /* AVTStickerGeneratorOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGeneratorOptions.h; sourceTree = "<group>"; };
-		4215B3492751E7C1002A6376 /* AVTStickerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerConfiguration.h; sourceTree = "<group>"; };
-		4215B34A2751E7C1002A6376 /* AVTStickerGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGenerator.h; sourceTree = "<group>"; };
-		4215B34B2751E7C1002A6376 /* AVTAvatarRecordRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecordRendering.h; sourceTree = "<group>"; };
-		4215B34C2751E7C1002A6376 /* AVTAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatar.h; sourceTree = "<group>"; };
-		4215B34D2751E7C1002A6376 /* AVTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTView.h; sourceTree = "<group>"; };
-		4215B34E2751E7C1002A6376 /* AVTAvatarRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecord.h; sourceTree = "<group>"; };
-		4215B34F2751E7C1002A6376 /* AVTAnimoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAnimoji.h; sourceTree = "<group>"; };
-		4215B3502751E7C1002A6376 /* AVTMemoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTMemoji.h; sourceTree = "<group>"; };
-		4215B3512751ED57002A6376 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
-		4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemojiThumbnailer.swift; sourceTree = "<group>"; };
-		4215B35527520D55002A6376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4215B35D27521774002A6376 /* AvatarStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvatarStream.entitlements; sourceTree = "<group>"; };
-		4215B35E27521775002A6376 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		4220EDA3274F8BF300C3595E /* AvatarStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStreamApp.swift; sourceTree = "<group>"; };
-		4220EDAA274F8BF400C3595E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4220EDAD274F8BF400C3595E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4220EDB4274F8D5600C3595E /* System Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "System Frameworks"; path = "AvatarStream/System Frameworks"; sourceTree = "<group>"; };
-		424D790B274F903000FB064A /* AvatarStream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvatarStream-Bridging-Header.h"; sourceTree = "<group>"; };
-		424D7910274F904400FB064A /* AVTAnimoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAnimoji.h; sourceTree = "<group>"; };
-		424D7915274F904500FB064A /* AVTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTView.h; sourceTree = "<group>"; };
-		424D7918274F904500FB064A /* AVTAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatar.h; sourceTree = "<group>"; };
-		424D7920274F911400FB064A /* AvatarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AvatarKit.framework; path = "AvatarStream/System Frameworks/AvatarKit.framework"; sourceTree = "<group>"; };
-		424D7921274F911400FB064A /* AvatarPersistence.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AvatarPersistence.framework; path = "AvatarStream/System Frameworks/AvatarPersistence.framework"; sourceTree = "<group>"; };
-		42CFC2052751923400EB7AFB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		42CFC2062751923400EB7AFB /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		4215B36827521B88002A6376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4215B36D27521B88002A6376 /* AvatarStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4215B37327521B88002A6376 /* AvatarStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4215B37527521B88002A6376 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4215B39327521D63002A6376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4215B3A727521E83002A6376 /* AVTStickerGeneratorOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGeneratorOptions.h; sourceTree = "<group>"; };
+		4215B3A827521E83002A6376 /* AVTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTView.h; sourceTree = "<group>"; };
+		4215B3A927521E83002A6376 /* AVTAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatar.h; sourceTree = "<group>"; };
+		4215B3AA27521E83002A6376 /* AVTAnimoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAnimoji.h; sourceTree = "<group>"; };
+		4215B3AB27521E83002A6376 /* AVTStickerGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGenerator.h; sourceTree = "<group>"; };
+		4215B3AC27521E83002A6376 /* AVTAvatarRecordRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecordRendering.h; sourceTree = "<group>"; };
+		4215B3AD27521E83002A6376 /* AVTMemoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTMemoji.h; sourceTree = "<group>"; };
+		4215B3AE27521E83002A6376 /* AVTStickerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerConfiguration.h; sourceTree = "<group>"; };
+		4215B3AF27521E83002A6376 /* AVTAvatarRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecord.h; sourceTree = "<group>"; };
+		4215B3B027521E83002A6376 /* AVTPAvatarRecordDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTPAvatarRecordDataSource.h; sourceTree = "<group>"; };
+		4215B3B127521E8D002A6376 /* AvatarStream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvatarStream-Bridging-Header.h"; sourceTree = "<group>"; };
+		4215B3BF27522159002A6376 /* AvatarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AvatarKit.framework; sourceTree = "<group>"; };
+		4215B3C027522159002A6376 /* AvatarPersistence.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AvatarPersistence.framework; sourceTree = "<group>"; };
+		4215B3C52752241F002A6376 /* Glue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glue.swift; sourceTree = "<group>"; };
+		4215B3C82752246F002A6376 /* Glue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glue.swift; sourceTree = "<group>"; };
+		4215B3CA275224A8002A6376 /* PlatformAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformAvatarView.swift; sourceTree = "<group>"; };
+		4215B3CF2752251F002A6376 /* PlatformAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformAvatarView.swift; sourceTree = "<group>"; };
+		42381EEE27523B77001A3D35 /* AvatarStreamApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarStreamApp.swift; sourceTree = "<group>"; };
+		42381EEF27523B77001A3D35 /* MemojiThumbnailer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemojiThumbnailer.swift; sourceTree = "<group>"; };
+		42381EF027523B77001A3D35 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42381EF127523B77001A3D35 /* PropertyListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
+		42381EF227523B77001A3D35 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		42381EF327523B77001A3D35 /* AvatarIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4220EDA0274F8BF300C3595E /* Frameworks */ = {
+		4215B36A27521B88002A6376 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424D7922274F911400FB064A /* AvatarKit.framework in Frameworks */,
-				424D7927274F926200FB064A /* AvatarPersistence.framework in Frameworks */,
-				4215B35C275215BB002A6376 /* MultipeerKit in Frameworks */,
+				4215B3C127522159002A6376 /* AvatarKit.framework in Frameworks */,
+				4215B3C32752215A002A6376 /* AvatarPersistence.framework in Frameworks */,
+				4215B3B927521FFB002A6376 /* MultipeerKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4215B37027521B88002A6376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4215B3C22752215A002A6376 /* AvatarKit.framework in Frameworks */,
+				4215B3C42752215A002A6376 /* AvatarPersistence.framework in Frameworks */,
+				4215B3BC27522008002A6376 /* MultipeerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4220ED9A274F8BF300C3595E = {
+		4215B36027521B87002A6376 = {
 			isa = PBXGroup;
 			children = (
-				4220EDB4274F8D5600C3595E /* System Frameworks */,
-				4220EDA5274F8BF300C3595E /* AvatarStream */,
-				4220EDA4274F8BF300C3595E /* Products */,
-				4220EDB6274F8D6A00C3595E /* Frameworks */,
+				4215B3BD2752201A002A6376 /* System Frameworks */,
+				4215B3A627521E75002A6376 /* Headers */,
+				4215B36527521B87002A6376 /* Shared */,
+				4215B3BE27522021002A6376 /* iOS */,
+				4215B37427521B88002A6376 /* macOS */,
+				4215B36E27521B88002A6376 /* Products */,
+				4215B3BA27522008002A6376 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4220EDA4274F8BF300C3595E /* Products */ = {
+		4215B36527521B87002A6376 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4220EDA3274F8BF300C3595E /* AvatarStream.app */,
+				42381EF327523B77001A3D35 /* AvatarIO.swift */,
+				42381EEE27523B77001A3D35 /* AvatarStreamApp.swift */,
+				42381EF227523B77001A3D35 /* AvatarView.swift */,
+				42381EF027523B77001A3D35 /* ContentView.swift */,
+				42381EEF27523B77001A3D35 /* MemojiThumbnailer.swift */,
+				42381EF127523B77001A3D35 /* PropertyListView.swift */,
+				4215B36827521B88002A6376 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4215B36E27521B88002A6376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4215B36D27521B88002A6376 /* AvatarStream.app */,
+				4215B37327521B88002A6376 /* AvatarStream.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4220EDA5274F8BF300C3595E /* AvatarStream */ = {
+		4215B37427521B88002A6376 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				4215B35D27521774002A6376 /* AvatarStream.entitlements */,
-				4215B35527520D55002A6376 /* Info.plist */,
-				424D790A274F901400FB064A /* Headers */,
-				4215B3462751E726002A6376 /* AvatarIO.swift */,
-				4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */,
-				42CFC2062751923400EB7AFB /* AvatarView.swift */,
-				42CFC2052751923400EB7AFB /* ContentView.swift */,
-				4215B3512751ED57002A6376 /* PropertyListView.swift */,
-				4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */,
-				4220EDAA274F8BF400C3595E /* Assets.xcassets */,
-				4220EDAC274F8BF400C3595E /* Preview Content */,
+				4215B37527521B88002A6376 /* macOS.entitlements */,
+				4215B3C82752246F002A6376 /* Glue.swift */,
+				4215B3CF2752251F002A6376 /* PlatformAvatarView.swift */,
 			);
-			path = AvatarStream;
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		4220EDAC274F8BF400C3595E /* Preview Content */ = {
+		4215B3A627521E75002A6376 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				4220EDAD274F8BF400C3595E /* Preview Assets.xcassets */,
+				4215B3AA27521E83002A6376 /* AVTAnimoji.h */,
+				4215B3A927521E83002A6376 /* AVTAvatar.h */,
+				4215B3AF27521E83002A6376 /* AVTAvatarRecord.h */,
+				4215B3AC27521E83002A6376 /* AVTAvatarRecordRendering.h */,
+				4215B3AD27521E83002A6376 /* AVTMemoji.h */,
+				4215B3B027521E83002A6376 /* AVTPAvatarRecordDataSource.h */,
+				4215B3AE27521E83002A6376 /* AVTStickerConfiguration.h */,
+				4215B3AB27521E83002A6376 /* AVTStickerGenerator.h */,
+				4215B3A727521E83002A6376 /* AVTStickerGeneratorOptions.h */,
+				4215B3A827521E83002A6376 /* AVTView.h */,
+				4215B3B127521E8D002A6376 /* AvatarStream-Bridging-Header.h */,
 			);
-			path = "Preview Content";
+			path = Headers;
 			sourceTree = "<group>";
 		};
-		4220EDB6274F8D6A00C3595E /* Frameworks */ = {
+		4215B3BA27522008002A6376 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4215B35E27521775002A6376 /* NetworkExtension.framework */,
-				424D7920274F911400FB064A /* AvatarKit.framework */,
-				424D7921274F911400FB064A /* AvatarPersistence.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		424D790A274F901400FB064A /* Headers */ = {
+		4215B3BD2752201A002A6376 /* System Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				424D790B274F903000FB064A /* AvatarStream-Bridging-Header.h */,
-				4215B34F2751E7C1002A6376 /* AVTAnimoji.h */,
-				4215B34C2751E7C1002A6376 /* AVTAvatar.h */,
-				4215B34E2751E7C1002A6376 /* AVTAvatarRecord.h */,
-				4215B34B2751E7C1002A6376 /* AVTAvatarRecordRendering.h */,
-				4215B3502751E7C1002A6376 /* AVTMemoji.h */,
-				4215B3492751E7C1002A6376 /* AVTStickerConfiguration.h */,
-				4215B34A2751E7C1002A6376 /* AVTStickerGenerator.h */,
-				4215B3482751E7C1002A6376 /* AVTStickerGeneratorOptions.h */,
-				4215B34D2751E7C1002A6376 /* AVTView.h */,
-				424D7910274F904400FB064A /* AVTAnimoji.h */,
-				424D7918274F904500FB064A /* AVTAvatar.h */,
-				424D7915274F904500FB064A /* AVTView.h */,
+				4215B3BF27522159002A6376 /* AvatarKit.framework */,
+				4215B3C027522159002A6376 /* AvatarPersistence.framework */,
 			);
-			path = Headers;
+			path = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		4215B3BE27522021002A6376 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4215B39327521D63002A6376 /* Info.plist */,
+				4215B3CA275224A8002A6376 /* PlatformAvatarView.swift */,
+				4215B3C52752241F002A6376 /* Glue.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4220EDA2274F8BF300C3595E /* AvatarStream */ = {
+		4215B36C27521B88002A6376 /* AvatarStream (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4220EDB1274F8BF400C3595E /* Build configuration list for PBXNativeTarget "AvatarStream" */;
+			buildConfigurationList = 4215B37E27521B88002A6376 /* Build configuration list for PBXNativeTarget "AvatarStream (iOS)" */;
 			buildPhases = (
-				4220ED9F274F8BF300C3595E /* Sources */,
-				4220EDA0274F8BF300C3595E /* Frameworks */,
-				4220EDA1274F8BF300C3595E /* Resources */,
+				4215B36927521B88002A6376 /* Sources */,
+				4215B36A27521B88002A6376 /* Frameworks */,
+				4215B36B27521B88002A6376 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AvatarStream;
+			name = "AvatarStream (iOS)";
 			packageProductDependencies = (
-				4215B35B275215BB002A6376 /* MultipeerKit */,
+				4215B3B827521FFB002A6376 /* MultipeerKit */,
 			);
-			productName = AvatarStream;
-			productReference = 4220EDA3274F8BF300C3595E /* AvatarStream.app */;
+			productName = "AvatarStream (iOS)";
+			productReference = 4215B36D27521B88002A6376 /* AvatarStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4215B37227521B88002A6376 /* AvatarStream (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4215B38127521B88002A6376 /* Build configuration list for PBXNativeTarget "AvatarStream (macOS)" */;
+			buildPhases = (
+				4215B36F27521B88002A6376 /* Sources */,
+				4215B37027521B88002A6376 /* Frameworks */,
+				4215B37127521B88002A6376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AvatarStream (macOS)";
+			packageProductDependencies = (
+				4215B3BB27522008002A6376 /* MultipeerKit */,
+			);
+			productName = "AvatarStream (macOS)";
+			productReference = 4215B37327521B88002A6376 /* AvatarStream.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4220ED9B274F8BF300C3595E /* Project object */ = {
+		4215B36127521B87002A6376 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					4220EDA2274F8BF300C3595E = {
+					4215B36C27521B88002A6376 = {
+						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
+					};
+					4215B37227521B88002A6376 = {
 						CreatedOnToolsVersion = 13.2;
 						LastSwiftMigration = 1320;
 					};
 				};
 			};
-			buildConfigurationList = 4220ED9E274F8BF300C3595E /* Build configuration list for PBXProject "AvatarStream" */;
+			buildConfigurationList = 4215B36427521B87002A6376 /* Build configuration list for PBXProject "AvatarStream" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -186,49 +249,74 @@
 				en,
 				Base,
 			);
-			mainGroup = 4220ED9A274F8BF300C3595E;
+			mainGroup = 4215B36027521B87002A6376;
 			packageReferences = (
-				4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */,
+				4215B3B727521FFB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */,
 			);
-			productRefGroup = 4220EDA4274F8BF300C3595E /* Products */;
+			productRefGroup = 4215B36E27521B88002A6376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4220EDA2274F8BF300C3595E /* AvatarStream */,
+				4215B36C27521B88002A6376 /* AvatarStream (iOS) */,
+				4215B37227521B88002A6376 /* AvatarStream (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4220EDA1274F8BF300C3595E /* Resources */ = {
+		4215B36B27521B88002A6376 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4220EDAE274F8BF400C3595E /* Preview Assets.xcassets in Resources */,
-				4220EDAB274F8BF400C3595E /* Assets.xcassets in Resources */,
+				4215B37A27521B88002A6376 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4215B37127521B88002A6376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4215B37B27521B88002A6376 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4220ED9F274F8BF300C3595E /* Sources */ = {
+		4215B36927521B88002A6376 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4215B3542751F4B0002A6376 /* MemojiThumbnailer.swift in Sources */,
-				4215B3472751E726002A6376 /* AvatarIO.swift in Sources */,
-				4215B3522751ED57002A6376 /* PropertyListView.swift in Sources */,
-				42CFC2072751923400EB7AFB /* ContentView.swift in Sources */,
-				42CFC2082751923400EB7AFB /* AvatarView.swift in Sources */,
-				4220EDA7274F8BF300C3595E /* AvatarStreamApp.swift in Sources */,
+				42381EFE27523B77001A3D35 /* AvatarIO.swift in Sources */,
+				4215B3C62752241F002A6376 /* Glue.swift in Sources */,
+				42381EFA27523B77001A3D35 /* PropertyListView.swift in Sources */,
+				42381EFC27523B77001A3D35 /* AvatarView.swift in Sources */,
+				42381EF827523B77001A3D35 /* ContentView.swift in Sources */,
+				4215B3CB275224A8002A6376 /* PlatformAvatarView.swift in Sources */,
+				42381EF627523B77001A3D35 /* MemojiThumbnailer.swift in Sources */,
+				42381EF427523B77001A3D35 /* AvatarStreamApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4215B36F27521B88002A6376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42381EFF27523B77001A3D35 /* AvatarIO.swift in Sources */,
+				4215B3C92752246F002A6376 /* Glue.swift in Sources */,
+				42381EFB27523B77001A3D35 /* PropertyListView.swift in Sources */,
+				42381EFD27523B77001A3D35 /* AvatarView.swift in Sources */,
+				42381EF927523B77001A3D35 /* ContentView.swift in Sources */,
+				4215B3D02752251F002A6376 /* PlatformAvatarView.swift in Sources */,
+				42381EF727523B77001A3D35 /* MemojiThumbnailer.swift in Sources */,
+				42381EF527523B77001A3D35 /* AvatarStreamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4220EDAF274F8BF400C3595E /* Debug */ = {
+		4215B37C27521B88002A6376 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,17 +367,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		4220EDB0274F8BF400C3595E /* Release */ = {
+		4215B37D27521B88002A6376 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -334,117 +420,190 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4220EDB2274F8BF400C3595E /* Debug */ = {
+		4215B37F27521B88002A6376 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AvatarStream/AvatarStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AvatarStream/Preview Content\"";
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AvatarStream/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Used solely to permit face tracking.";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be sent between devices on your local network.";
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be shared between devices on your local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.AvatarStream;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AvatarStream;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AvatarStream/Headers/AvatarStream-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Headers/AvatarStream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4220EDB3274F8BF400C3595E /* Release */ = {
+		4215B38027521B88002A6376 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AvatarStream/AvatarStream.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AvatarStream/Preview Content\"";
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AvatarStream/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AvatarStream/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Used solely to permit face tracking.";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be sent between devices on your local network.";
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Memoji can be shared between devices on your local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.AvatarStream;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AvatarStream;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AvatarStream/Headers/AvatarStream-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Headers/AvatarStream-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4215B38227521B88002A6376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.AvatarStream;
+				PRODUCT_NAME = AvatarStream;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Headers/AvatarStream-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4215B38327521B88002A6376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+					"$(PROJECT_DIR)/System\\ Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.AvatarStream;
+				PRODUCT_NAME = AvatarStream;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Headers/AvatarStream-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4220ED9E274F8BF300C3595E /* Build configuration list for PBXProject "AvatarStream" */ = {
+		4215B36427521B87002A6376 /* Build configuration list for PBXProject "AvatarStream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4220EDAF274F8BF400C3595E /* Debug */,
-				4220EDB0274F8BF400C3595E /* Release */,
+				4215B37C27521B88002A6376 /* Debug */,
+				4215B37D27521B88002A6376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4220EDB1274F8BF400C3595E /* Build configuration list for PBXNativeTarget "AvatarStream" */ = {
+		4215B37E27521B88002A6376 /* Build configuration list for PBXNativeTarget "AvatarStream (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4220EDB2274F8BF400C3595E /* Debug */,
-				4220EDB3274F8BF400C3595E /* Release */,
+				4215B37F27521B88002A6376 /* Debug */,
+				4215B38027521B88002A6376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4215B38127521B88002A6376 /* Build configuration list for PBXNativeTarget "AvatarStream (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4215B38227521B88002A6376 /* Debug */,
+				4215B38327521B88002A6376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -452,7 +611,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */ = {
+		4215B3B727521FFB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/insidegui/MultipeerKit";
 			requirement = {
@@ -463,12 +622,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4215B35B275215BB002A6376 /* MultipeerKit */ = {
+		4215B3B827521FFB002A6376 /* MultipeerKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4215B35A275215BB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */;
+			package = 4215B3B727521FFB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */;
+			productName = MultipeerKit;
+		};
+		4215B3BB27522008002A6376 /* MultipeerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4215B3B727521FFB002A6376 /* XCRemoteSwiftPackageReference "MultipeerKit" */;
 			productName = MultipeerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4220ED9B274F8BF300C3595E /* Project object */;
+	rootObject = 4215B36127521B87002A6376 /* Project object */;
 }
