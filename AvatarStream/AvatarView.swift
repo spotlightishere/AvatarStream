@@ -9,14 +9,22 @@ import SceneKit
 import SwiftUI
 
 struct AvatarView: UIViewRepresentable {
-    let animoji: String
+    let avatar: AVTAvatar
+
+    init(animoji: String) {
+        avatar = AVTAnimoji(named: animoji)
+    }
+
+    init(record: AVTAvatarRecord) {
+        avatar = AVTAvatarRecordRendering.avatar(for: record, usageIntent: 1)
+    }
 
     func makeUIView(context _: Context) -> UIView {
         let avatarView = AVTView()
-        avatarView.avatar = AVTAnimoji(named: animoji)
+        avatarView.avatar = avatar
         avatarView.setEnableFaceTracking(true)
         avatarView.backgroundColor = .green
-        
+
         return avatarView
     }
 

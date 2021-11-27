@@ -1,6 +1,6 @@
 //
 //  AVTAvatar.h
-//  AvatarExport
+//  AvatarStream
 //
 //  Created by Spotlight Deveaux on 2021-11-19.
 //

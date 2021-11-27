@@ -1,3 +1,8 @@
 #import "AVTAnimoji.h"
 #import "AVTAvatar.h"
+#import "AVTAvatarRecordRendering.h"
+#import "AVTMemoji.h"
+#import "AVTStickerConfiguration.h"
+#import "AVTStickerGenerator.h"
+#import "AVTStickerGeneratorOptions.h"
 #import "AVTView.h"

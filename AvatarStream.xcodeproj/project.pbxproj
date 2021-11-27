@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4215B3472751E726002A6376 /* AvatarIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3462751E726002A6376 /* AvatarIO.swift */; };
+		4215B3522751ED57002A6376 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3512751ED57002A6376 /* PropertyListView.swift */; };
+		4215B3542751F4B0002A6376 /* MemojiThumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */; };
 		4220EDA7274F8BF300C3595E /* AvatarStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */; };
 		4220EDAB274F8BF400C3595E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAA274F8BF400C3595E /* Assets.xcassets */; };
 		4220EDAE274F8BF400C3595E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4220EDAD274F8BF400C3595E /* Preview Assets.xcassets */; };
@@ -17,6 +20,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4215B3462751E726002A6376 /* AvatarIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarIO.swift; sourceTree = "<group>"; };
+		4215B3482751E7C1002A6376 /* AVTStickerGeneratorOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGeneratorOptions.h; sourceTree = "<group>"; };
+		4215B3492751E7C1002A6376 /* AVTStickerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerConfiguration.h; sourceTree = "<group>"; };
+		4215B34A2751E7C1002A6376 /* AVTStickerGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTStickerGenerator.h; sourceTree = "<group>"; };
+		4215B34B2751E7C1002A6376 /* AVTAvatarRecordRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecordRendering.h; sourceTree = "<group>"; };
+		4215B34C2751E7C1002A6376 /* AVTAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatar.h; sourceTree = "<group>"; };
+		4215B34D2751E7C1002A6376 /* AVTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTView.h; sourceTree = "<group>"; };
+		4215B34E2751E7C1002A6376 /* AVTAvatarRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAvatarRecord.h; sourceTree = "<group>"; };
+		4215B34F2751E7C1002A6376 /* AVTAnimoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTAnimoji.h; sourceTree = "<group>"; };
+		4215B3502751E7C1002A6376 /* AVTMemoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVTMemoji.h; sourceTree = "<group>"; };
+		4215B3512751ED57002A6376 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
+		4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemojiThumbnailer.swift; sourceTree = "<group>"; };
 		4220EDA3274F8BF300C3595E /* AvatarStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStreamApp.swift; sourceTree = "<group>"; };
 		4220EDAA274F8BF400C3595E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,9 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				424D790A274F901400FB064A /* Headers */,
+				4215B3462751E726002A6376 /* AvatarIO.swift */,
 				4220EDA6274F8BF300C3595E /* AvatarStreamApp.swift */,
 				42CFC2062751923400EB7AFB /* AvatarView.swift */,
 				42CFC2052751923400EB7AFB /* ContentView.swift */,
+				4215B3512751ED57002A6376 /* PropertyListView.swift */,
+				4215B3532751F4B0002A6376 /* MemojiThumbnailer.swift */,
 				4220EDAA274F8BF400C3595E /* Assets.xcassets */,
 				4220EDAC274F8BF400C3595E /* Preview Content */,
 			);
@@ -97,6 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				424D790B274F903000FB064A /* AvatarStream-Bridging-Header.h */,
+				4215B34F2751E7C1002A6376 /* AVTAnimoji.h */,
+				4215B34C2751E7C1002A6376 /* AVTAvatar.h */,
+				4215B34E2751E7C1002A6376 /* AVTAvatarRecord.h */,
+				4215B34B2751E7C1002A6376 /* AVTAvatarRecordRendering.h */,
+				4215B3502751E7C1002A6376 /* AVTMemoji.h */,
+				4215B3492751E7C1002A6376 /* AVTStickerConfiguration.h */,
+				4215B34A2751E7C1002A6376 /* AVTStickerGenerator.h */,
+				4215B3482751E7C1002A6376 /* AVTStickerGeneratorOptions.h */,
+				4215B34D2751E7C1002A6376 /* AVTView.h */,
 				424D7910274F904400FB064A /* AVTAnimoji.h */,
 				424D7918274F904500FB064A /* AVTAvatar.h */,
 				424D7915274F904500FB064A /* AVTView.h */,
@@ -175,6 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4215B3542751F4B0002A6376 /* MemojiThumbnailer.swift in Sources */,
+				4215B3472751E726002A6376 /* AvatarIO.swift in Sources */,
+				4215B3522751ED57002A6376 /* PropertyListView.swift in Sources */,
 				42CFC2072751923400EB7AFB /* ContentView.swift in Sources */,
 				42CFC2082751923400EB7AFB /* AvatarView.swift in Sources */,
 				4220EDA7274F8BF300C3595E /* AvatarStreamApp.swift in Sources */,
