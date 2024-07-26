@@ -1,5 +1,5 @@
 //
-//  AvatarStreamApp.swift
+//  AvatarView.swift
 //  Shared
 //
 //  Created by Spotlight Deveaux on 2021-11-26.
